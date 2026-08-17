@@ -1,0 +1,57 @@
+.piece {
+    font-size: 50px;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    transition: all 2s ease;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* Color borders for piece images */
+.piece.blue {
+    border: 2px solid #87ceeb;
+}
+
+.piece.green {
+    border: 2px solid #90ee90;
+}
+
+.piece.red {
+    border: 2px solid #ffb6c1;
+}
+
+/* Color styles with light borders for better visibility */
+.piece.blue {
+    fill: #1e40af;
+    stroke: #93c5fd;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 2px #dbeafe);
+}
+
+.piece.green {
+    fill: #15803d;
+    stroke: #86efac;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 2px #dcfce7);
+}
+
+.piece.red {
+    fill: #dc2626;
+    stroke: #fca5a5;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 2px #fee2e2);
+}
+
+/* Theme styles */
+.piece.arialTheme {
+    font-family: 'Arial', sans-serif;
+}
+
+.piece.freeSerifTheme {
+    font-family: 'FreeSerif', sans-serif;
+}
+
+.piece.dejaVuSansTheme {
+    font-family: 'DejaVuSans', sans-serif;
+}

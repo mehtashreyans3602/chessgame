@@ -1,0 +1,82 @@
+.polygon {
+    cursor: pointer;
+    transition: fill 0.2s ease;
+    stroke: transparent;
+    stroke-width: 2;
+}
+
+.polygon:hover {
+    fill: #e8e8e8;
+    stroke: #999;
+    stroke-width: 2;
+}
+
+/* Board color themes using CSS variables */
+:root {
+    --board-light: #f5f5dc;
+    --board-dark: #deb887;
+}
+
+.polygon.blue.light,
+.polygon.green.light,
+.polygon.red.light {
+    fill: var(--board-light);
+}
+
+.polygon.blue.dark,
+.polygon.green.dark,
+.polygon.red.dark {
+    fill: var(--board-dark);
+}
+
+/* Highlighted state */
+.polygon.highlight {
+    fill: rgba(76, 175, 80, 0.4) !important;
+    stroke: #4CAF50 !important;
+    stroke-width: 4 !important;
+    filter: drop-shadow(0 0 8px rgba(76, 175, 80, 0.6));
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+
+:global(.highlight) {
+    fill: rgba(76, 175, 80, 0.4) !important;
+    stroke: #4CAF50 !important;
+    stroke-width: 4 !important;
+    filter: drop-shadow(0 0 8px rgba(76, 175, 80, 0.6));
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        filter: drop-shadow(0 0 8px rgba(76, 175, 80, 0.6));
+        stroke-width: 4;
+    }
+    50% {
+        filter: drop-shadow(0 0 12px rgba(76, 175, 80, 0.8));
+        stroke-width: 5;
+    }
+}
+
+/* Selected piece highlighting */
+.polygon.selected {
+    fill: rgba(33, 150, 243, 0.3) !important;
+    stroke: #2196F3 !important;
+    stroke-width: 4 !important;
+    filter: drop-shadow(0 0 10px rgba(33, 150, 243, 0.7));
+}
+
+:global(.selected) {
+    fill: rgba(33, 150, 243, 0.3) !important;
+    stroke: #2196F3 !important;
+    stroke-width: 4 !important;
+    filter: drop-shadow(0 0 10px rgba(33, 150, 243, 0.7));
+}
+
+/* Polygon labels */
+.label {
+    fill: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+}

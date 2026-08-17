@@ -128,12 +128,12 @@ Both servers must be running at the same time. The proxy is configured in `Front
 
 ## API endpoints
 
-| Method | Path              | Description                                             |
-|--------|-------------------|---------------------------------------------------------|
-| GET    | `/newGame`        | Initialise a fresh game session                         |
-| POST   | `/onClick`        | Send a polygon label (e.g. `Be2`); returns `GameState`  |
-| GET    | `/currentPlayer`  | Returns current turn colour (`"B"`, `"G"`, or `"R"`)   |
-| GET    | `/board`          | Returns `{ "Ba1": "BR", … }` board snapshot             |
+| Method | Path             | Description                                            |
+| ------ | ---------------- | ------------------------------------------------------ |
+| GET    | `/newGame`       | Initialise a fresh game session                        |
+| POST   | `/onClick`       | Send a polygon label (e.g. `Be2`); returns `GameState` |
+| GET    | `/currentPlayer` | Returns current turn colour (`"B"`, `"G"`, or `"R"`)   |
+| GET    | `/board`         | Returns `{ "Ba1": "BR", … }` board snapshot            |
 
 ### GameState response shape
 
@@ -161,15 +161,15 @@ Examples: `Ba1` (Blue A-file row 1), `Ge3` (Green E-file row 3), `Rh4` (Red H-fi
 
 Two characters — colour + type:
 
-| Code | Meaning         |
-|------|-----------------|
-| `BB` | Blue Bishop     |
-| `GK` | Green King      |
-| `RP` | Red Pawn        |
-| `BH` | Blue Commander  |
-| `GN` | Green Knight    |
-| `RQ` | Red Queen       |
-| `BR` | Blue Rook       |
+| Code | Meaning        |
+| ---- | -------------- |
+| `BB` | Blue Bishop    |
+| `GK` | Green King     |
+| `RP` | Red Pawn       |
+| `BH` | Blue Commander |
+| `GN` | Green Knight   |
+| `RQ` | Red Queen      |
+| `BR` | Blue Rook      |
 
 ---
 

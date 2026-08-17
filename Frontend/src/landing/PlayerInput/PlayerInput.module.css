@@ -1,0 +1,54 @@
+.inputContainer {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #5dade2;
+    box-shadow: 0 0 0 3px rgba(93, 173, 226, 0.1);
+}
+
+.inputError {
+    border-color: #ec7063;
+}
+
+.inputError:focus {
+    border-color: #ec7063;
+    box-shadow: 0 0 0 3px rgba(236, 112, 99, 0.1);
+}
+
+.kingIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.errorMessage {
+    display: block;
+    margin-top: 6px;
+    color: #ec7063;
+    font-size: 14px;
+}

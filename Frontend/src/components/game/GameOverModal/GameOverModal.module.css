@@ -1,0 +1,71 @@
+.content {
+    text-align: center;
+}
+
+.winnerDisplay {
+    margin-bottom: 30px;
+}
+
+.crown {
+    font-size: 64px;
+    display: block;
+    margin-bottom: 20px;
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.winnerText {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.colorBadge {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: white;
+}
+
+.colorBadge.blue {
+    background-color: #5dade2;
+}
+
+.colorBadge.green {
+    background-color: #76d7c4;
+}
+
+.colorBadge.red {
+    background-color: #ec7063;
+}
+
+.message {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.actions button {
+    width: 100%;
+}

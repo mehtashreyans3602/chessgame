@@ -1,0 +1,21 @@
+:root {
+    /* Blue player colors */
+    --blue-light: #d6eaf8;
+    --blue-dark: #5dade2;
+
+    /* Green player colors */
+    --green-light: #d1f2eb;
+    --green-dark: #76d7c4;
+
+    /* Red player colors */
+    --red-light: #fadbd8;
+    --red-dark: #ec7063;
+
+    /* UI colors */
+    --highlight: lightgrey;
+    --panel-bg: rosybrown;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --border-color: #ccc;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
